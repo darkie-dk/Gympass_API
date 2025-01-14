@@ -19,7 +19,7 @@ describe('Search gyms (e2e)', () => {
       .post('/gyms')
       .set('Authorization', `bearer ${token}`)
       .send({
-        title: 'typescript',
+        title: 'near',
         description: '',
         phone: '',
         latitude: -27.0747279,
@@ -29,7 +29,7 @@ describe('Search gyms (e2e)', () => {
       .post('/gyms')
       .set('Authorization', `bearer ${token}`)
       .send({
-        title: 'solid',
+        title: 'far',
         description: '',
         phone: '',
         latitude: -27.0747279,
@@ -39,18 +39,18 @@ describe('Search gyms (e2e)', () => {
     const response = await request(app.server)
       .get('/gyms/search')
       .query({
-        q: 'solid',
+        q: 'far',
       })
       .set('Authorization', `bearer ${token}`)
       .send()
 
-    console.log(response.body)
+    console.log(response.body.gyms)
 
     expect(response.statusCode).toEqual(200)
     expect(response.body.gyms).toHaveLength(1)
     expect(response.body.gyms).toEqual([
       expect.objectContaining({
-        title: 'solid',
+        title: 'far',
       }),
     ])
   })
