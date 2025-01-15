@@ -13,7 +13,7 @@ describe('Search gyms (e2e)', () => {
   })
 
   it('list near by gyms', async () => {
-    const { token } = await createAndAuthUser(app)
+    const { token } = await createAndAuthUser(app, true)
 
     await request(app.server)
       .post('/gyms')
@@ -44,8 +44,6 @@ describe('Search gyms (e2e)', () => {
       })
       .set('Authorization', `bearer ${token}`)
       .send()
-
-    console.log(response.body)
 
     expect(response.statusCode).toEqual(200)
     expect(response.body.gyms).toHaveLength(1)
