@@ -5,28 +5,27 @@ GymPass
 
 ## RFs
 
-  - [ ] register/signup user;
-  - [ ] register/signup gym;
-  - [ ] authenticate;
-  - [ ] get loged in user;
-  - [ ] get check-ins used by user loged in;
-  - [ ] get check-ins history;
-  - [ ] search near gyms;
-  - [ ] search gym by name;
-  - [ ] do a check-in;
-  - [ ] validate user's check-in;
+  - [ x ] register/signup user;
+  - [ x ] register/signup gym;
+  - [ x ] authenticate;
+  - [ x ] get loged in user;
+  - [ x ] get check-ins used by user loged in;
+  - [ x ] get check-ins history;
+  - [ x ] search near gyms;
+  - [ x ] search gym by name;
+  - [ x ] do a check-in;
+  - [ x ] validate user's check-in;
 
 ## RNs
 
-  - [ ] cant register an email twice;
-  - [ ] cant do 2 check-ins;
-  - [ ] cant do check-in further than 500m from gym;
-  - [ ] 20 min prompt to validate check-in;
-  - [ ] validation only from admins;
-  - [ ] only amdin can register gyms;
+  - [ x ] cant register an email twice;
+  - [ x ] cant do 2 check-ins;
+  - [ x ] cant do check-in further than 500m from gym;
+  - [ x ] 20 min prompt to validate check-in;
+  - [ x ] validation only from admins;
+  - [ x ] only amdin can register gyms;
 
 
-## RNFs
 
 
 
