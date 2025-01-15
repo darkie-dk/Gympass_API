@@ -15,5 +15,5 @@ jobs:
           node-version: 18
           cache: 'npm'
 
-      - run: pnpm ci
-      - run: pnpm run test
+      - run: npm ci
+      - run: npm run test
